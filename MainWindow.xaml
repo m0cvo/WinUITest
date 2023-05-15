@@ -1,0 +1,35 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Window
+    x:Class="WinUITest.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUITest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Padding="40">
+        <TextBlock>
+            <LineBreak/>
+            <Run>Trial app for WinUI3.</Run><LineBreak/>
+            <Run>Copyright (c) N.Booth for Mogpie 2023.</Run>
+        </TextBlock>
+        <AppBar Content="This is a test">
+        </AppBar>
+        <CalendarDatePicker
+            HorizontalAlignment="Left" >
+        </CalendarDatePicker>
+
+        <TextBox x:Name="Txt1"
+            HorizontalAlignment="Center" Height="10" Width="150" PlaceholderText="Enter Name"  ></TextBox>
+        <Button x:Name="EnterBtn" Content="Enter" HorizontalAlignment ="Right" Width="150" Click="EnterBtnClick"
+            ClickMode="Press"  >
+        </Button>
+        <Button x:Name="CloseBtn" Content="Close" HorizontalAlignment="Right" Width="150" Margin="0, 150, 0, 0"
+            Click="CloseBtnClick" ClickMode="Press"> 
+            
+        </Button>
+    </Grid>
+</Window>
